@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicios</title>
+	<script type="text/javascript">
+
+
+
+function getPalabra(){
+
+			var num=0;
+			var letra=0;
+			var palabra=prompt("Inserta una palabra con numeros");
+			var size=palabra.length;
+			for (var i =0; i <= size; i++) {
+				var code = palabra.charCodeAt(i);
+				if ((code>=65 && code<=90 || code>=97 && code<=122) ) {
+					letra++;
+					}
+					else(code>=48 && code<=57) 
+						num++;
+
+
+		}
+		document.write("letras:"+letra+" "+"numeros:"+num);
+		}								
+		</script>
+</head>
+<body>
+	<button onclick="getPalabra()">Pruebame</button>
+
+
+	</body>
+	</html>
